@@ -1,0 +1,16 @@
+use * from core
+use WebServer from webserver
+use json
+
+func main (args) {
+
+   # Read config
+   f = open ("config.json", "r")
+   config = json.parse (f.readAllText ())
+   f.close ()
+
+   # Start the webserver
+   server = WebServer ()
+   server.loadConfiguration (config)
+   server.listen ()
+}
