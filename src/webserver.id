@@ -64,7 +64,9 @@ class WebServer {
     printf ("Binding socket to {}:{}", self.host, self.port)
     self.sock.bind (self.host, self.port)
     self.sock.listen (100)
+    printf (3)
      while (true) {
+       printf (4)
         client = self.sock.accept ()
         printf ("Accepted client")
         trd = Thread (lambda () => { self.handleClient (client) })
