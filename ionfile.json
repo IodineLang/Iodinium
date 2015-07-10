@@ -1,0 +1,6 @@
+{
+    "modules": {
+        "iodinium": "src"
+    },
+    "extensions": {}
+}
