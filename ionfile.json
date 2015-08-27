@@ -1,6 +1,5 @@
 {
-    "modules": {
-        "iodinium": "src"
-    },
-    "extensions": {}
+    "sources": [
+        "src"
+    ]
 }
